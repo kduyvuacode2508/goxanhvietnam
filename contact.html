@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - Gỗ Xanh Việt Nam| Tư Vấn Miễn Phí Cửa Gỗ Nhựa Composite</title>
+    <meta name="description" content="Liên hệ Công ty Cổ phần công nghệ Gỗ Xanh Việt Nam để được tư vấn miễn phí về cửa gỗ nhựa composite.  .">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./anh/logo.png">
+    <style>
+    
+/* Contact Main Section */
+.contact-main-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+}
+
+.contact-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Left Column Styles */
+.contact-left-column {
+    space-y: 30px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.section-title p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+.contact-info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.contact-info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.contact-info-card:hover::before {
+    left: 100%;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(3, 105, 161, 0.15);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(3, 105, 161, 0.05), rgba(2, 132, 199, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-info-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.address-card .card-icon {
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+.hours-card .card-icon {
+    background: linear-gradient(135deg, #059669, #10b981);
+}
+
+.phone-card .card-icon {
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+}
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover .card-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.card-icon i {
+    color: white;
+    font-size: 24px;
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.card-content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-info-card:hover .card-content h3 {
+    color: #0369a1;
+}
+
+.card-content p {
+    color: #64748b;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.hours-list {
+    margin-bottom: 20px;
+}
+
+.hour-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.day {
+    font-weight: 600;
+    color: #374151;
+}
+
+.time {
+    color: #059669;
+    font-weight: 500;
+}
+
+.status-open {
+    color: #059669;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-map {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-map::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-map:hover::before {
+    left: 100%;
+}
+
+.btn-map:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
+}
+
+.phone-number {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.phone-number::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.phone-number:hover::before {
+    left: 100%;
+}
+
+.phone-number:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.4);
+}
+
+/* Right Column - QR Code Styles */
+.contact-right-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+}
+
+.qr-main-container {
+    background: white;
+    border-radius: 25px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    width: 100%;
+    max-width: 500px;
+}
+
+.qr-main-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(59, 130, 246, 0.05), transparent);
+    transform: rotate(-45deg);
+    transition: transform 0.6s ease;
+}
+
+.qr-main-container:hover::before {
+    transform: rotate(-45deg) scale(1.2);
+}
+
+.qr-main-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 80px rgba(59, 130, 246, 0.15);
+}
+
+.qr-header {
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.qr-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.qr-main-container:hover .qr-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.qr-icon i {
+    color: white;
+    font-size: 32px;
+}
+
+.qr-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+
+.qr-header p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+.qr-code-section {
+    margin: 30px 0;
+    position: relative;
+}
+
+.qr-code-frame {
+    display: inline-block;
+    padding: 20px;
+    border: 3px dashed #3b82f6;
+    border-radius: 20px;
+    background: #f8fafc;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.qr-code-frame:hover {
+    border-color: #1d4ed8;
+    background: #eff6ff;
+    transform: scale(1.05);
+}
+
+.qr-code-frame img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.qr-scan-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+    animation: scan 2s infinite;
+}
+
+@keyframes scan {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(220px); opacity: 0; }
+}
+
+.qr-actions {
+    margin: 30px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.zalo-button {
+    background: linear-gradient(135deg, #0077ff, #0066dd);
+    color: white;
+    padding: 18px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 119, 255, 0.3);
+}
+
+.button-ripple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.zalo-button:hover .button-ripple {
+    width: 300px;
+    height: 300px;
+}
+
+.zalo-button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 50px rgba(0, 119, 255, 0.4);
+}
+
+.button-text {
+    position: relative;
+    z-index: 2;
+}
+
+.zalo-phone {
+    display: block;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.qr-note {
+    margin-top: 20px;
+    color: #64748b;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.contact-features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    position: relative;
+    z-index: 2;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Why Choose Section */
+.why-choose-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.reason-item {
+    background: linear-gradient(135deg, #f8fafc, #ffffff);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e7eb;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.reason-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.reason-item:hover::before {
+    left: 100%;
+}
+
+.reason-item:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 60px rgba(59, 130, 246, 0.15);
+    border-color: #3b82f6;
+}
+
+.reason-number {
+    font-size: 48px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.reason-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.reason-item:hover .reason-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.reason-item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #166534; /* xanh lá đậm */
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.reason-item:hover h3 {
+    color: #16a34a;
+}
+
+.reason-item p {
+    color: #374151;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.reason-item:hover .reason-number {
+    transform: scale(1.1) rotate(5deg);
+}
+
+
+
+.reason-item:hover .reason-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.reason-icon i {
+    color: white;
+    font-size: 28px;
+}
+
+
+
+.reason-item p {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .contact-two-columns {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .contact-right-column {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+   
+    
+    .page-header h1 {
+        font-size: 32px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .section-header h2 {
+        font-size: 28px;
+    }
+    
+    .reasons-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hotline-fixed {
+        top: 15px;
+        right: 15px;
+        padding: 10px 15px;
+    }
+    
+    .hotline-fixed a {
+        font-size: 14px;
+    }
+    
+    .contact-info-card {
+        padding: 25px 20px;
+    }
+    
+    .qr-main-container {
+        padding: 30px 20px;
+    }
+    
+    .qr-code-frame img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .contact-features {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .feature-item {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 28px;
+    }
+    
+    .section-header h2 {
+        font-size: 24px;
+    }
+    
+    .reason-number {
+        font-size: 36px;
+    }
+    
+    .zalo-button {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+}
+
+/* Animation for smooth loading */
+section {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.contact-main-section { animation-delay: 0.2s; }
+.why-choose-section { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    </style>
+</head>
+<body>
+ <!-- Hotline Fixed -->
+ <div class="hotline-fixed">
+    <a href="tel:0348556666">
+        <i class="fas fa-phone hotline-icon"></i>
+        034.855.6666
+    </a>
+</div>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <img src="./anh/logo.png" alt="">
+                <span>Gỗ Xanh Việt Nam</span>
+            </div>
+            <nav class="nav">
+                <a href="./index.html" class="nav-link ">Trang Chủ</a>
+                <a href="./products.html" class="nav-link">Sản Phẩm</a>
+                <a href="./feedback.html" class="nav-link">Phản Hồi</a>
+                <a href="./contact.html"class="nav-link active">Liên Hệ</a>
+            </nav>
+            <div class="contact-info">
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1><i class="fas fa-comments"></i> Liên Hệ Với Chúng Tôi</h1>
+        <p>Đội ngũ chuyên gia sẵn sàng tư vấn và hỗ trợ bạn 24/7</p>
+    </div>
+</section>
+
+<!-- Contact Information - Two Column Layout -->
+<section class="contact-main-section">
+    <div class="container">
+        <div class="contact-two-columns">
+            
+            <!-- Left Column - Address & Working Hours -->
+            <div class="contact-left-column">
+                <div class="section-title">
+                    <h2><i class="fas fa-map-marker-alt"></i> Thông Tin Liên Hệ</h2>
+                    <p>Địa chỉ và giờ làm việc của chúng tôi</p>
+                </div>
+
+                <!-- Address Card -->
+                <div class="contact-info-card address-card">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Địa Chỉ nhà máy</h3>
+                        <p>Thôn Phú Vinh, Xã Phú Nghĩa<br>Thành phố Hà Nội, Việt Nam</p>
+                        <a href="#" class="btn-map">
+                            <i class="fas fa-route"></i>
+                            Xem Bản Đồ
+                        </a>
+                    </div>
+                    <div class="card-overlay"></div>
+                </div>
+
+                <!-- Working Hours Card -->
+                <div class="contact-info-card hours-card">
+                    <div class="card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Giờ Làm Việc</h3>
+                        <div class="hours-list">
+                            <div class="hour-item">
+                                <span class="day">Thứ 2 - Thứ 7:</span>
+                                <span class="time">8:00 - 18:00</span>
+                            </div>
+                            <div class="hour-item">
+                                <span class="day">Chủ Nhật:</span>
+                                <span class="time">9:00 - 17:00</span>
+                            </div>
+                        </div>
+                        <div class="status-open">
+                            <i class="fas fa-check-circle"></i>
+                            Đang mở cửa
+                        </div>
+                    </div>
+                    <div class="card-overlay"></div>
+                </div>
+
+                <!-- Phone Card -->
+                <div class="contact-info-card phone-card">
+                    <div class="card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotline Tư Vấn</h3>
+                        <p>Tư vấn miễn phí 24/7</p>
+                        <a href="tel:0815023789" class="phone-number">
+                            <i class="fas fa-phone-alt"></i>
+                            0815.023.789
+                        </a>
+                    </div>
+                    <div class="card-overlay"></div>
+                </div>
+            </div>
+
+            <!-- Right Column - QR Code & Zalo -->
+            <div class="contact-right-column">
+                <div class="qr-main-container">
+                    <div class="qr-header">
+                        <div class="qr-icon">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h2>Quét Mã QR</h2>
+                        <p>Kết nối trực tiếp với chúng tôi qua Zalo</p>
+                    </div>
+                    
+                    <div class="qr-code-section">
+                        <div class="qr-code-frame">
+                            <img src="./anh/QR.png.png" alt="QR Code Zalo Việt Wood" />
+                            <div class="qr-scan-line"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="qr-actions">
+                        <a href="https://zalo.me/0348556666" target="_blank" rel="noopener noreferrer" class="zalo-button">
+                            <i class="fas fa-comments"></i>
+                            <span class="button-text">
+                                Chat Zalo Ngay
+                                <span class="zalo-phone"> 034.855.6666</span>
+                            </span>
+                            <div class="button-ripple"></div>
+                        </a>
+                        <p class="qr-note">
+                            <i class="fas fa-info-circle"></i>
+                            Hoặc quét mã QR bên trên để kết nối trực tiếp
+                        </p>
+                    </div>
+
+                    <div class="contact-features">
+                        <div class="feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Phản hồi nhanh</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-headset"></i>
+                            <span>Hỗ trợ 24/7</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-gift"></i>
+                            <span>Tư vấn miễn phí</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose-section">
+    <div class="container">
+        <div class="section-header">
+            <h2><i class="fas fa-star"></i> Tại Sao Chọn Gỗ Xanh Việt Nam</h2>
+            <p>5 lý do khiến khách hàng tin tưởng lựa chọn chúng tôi</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-item">
+                <div class="reason-number">01</div>
+                <div class="reason-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Kinh Nghiệm Lâu Năm</h3>
+                <p>Hơn 15 năm trong ngành sản xuất cửa gỗ nhựa, am hiểu sâu sắc về sản phẩm và nhu cầu khách hàng.</p>
+            </div>
+            <div class="reason-item">
+                <div class="reason-number">02</div>
+                <div class="reason-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Chất Lượng Đảm Bảo</h3>
+                <p>Sản phẩm được kiểm tra chất lượng nghiêm ngặt, đạt tiêu chuẩn quốc tế về độ bền và an toàn.</p>
+            </div>
+            <div class="reason-item">
+                <div class="reason-number">03</div>
+                <div class="reason-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h3>Giá Cả Cạnh Tranh</h3>
+                <p>Giá trực tiếp từ nhà sản xuất, không qua trung gian, đảm bảo giá tốt nhất thị trường.</p>
+            </div>
+            <div class="reason-item">
+                <div class="reason-number">04</div>
+                <div class="reason-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Thi Công Chuyên Nghiệp</h3>
+                <p>Đội ngũ thợ giàu kinh nghiệm, thi công nhanh chóng, đảm bảo tiến độ và chất lượng.</p>
+            </div>
+            <div class="reason-item">
+                <div class="reason-number">05</div>
+                <div class="reason-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Hậu Mãi Tận Tâm</h3>
+                <p>Bảo hành lên đến 10 năm, hỗ trợ khách hàng 24/7, dịch vụ sửa chữa nhanh chóng.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Gỗ Xanh Việt Nam</h3>
+                <p>Công ty Cổ phần công nghệ Gỗ Xanh Việt Nam - Chuyên sản xuất và thi công cửa gỗ nhựa composite cao cấp với hơn 15 năm kinh nghiệm trong ngành.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fas fa-comment-dots"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Hệ</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Thôn Tiên Trượng, Xuân Mai, TP Hà Nội, Việt Nam</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:0348556666">034.855.6666</a> - <a href="tel:0977675668">097.767.5668</a></p>
+                    <p><i class="fas fa-envelope"></i> goxanhvietnam@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> 8:00 - 18:00 (Thứ 2 - Chủ nhật)</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Sản Phẩm</h3>
+                <ul>
+                    <li><a href="#products">Cửa Gỗ Nhựa Composite</a></li>
+                    <li><a href="#products">Cửa Chống Nước</a></li>
+                    <li><a href="#products">Cửa Phòng Ngủ</a></li>
+                    <li><a href="#products">Cửa Phòng Tắm</a></li>
+                    <li><a href="#products">Cửa Chính</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Bản Đồ & Dịch Vụ</h3>
+                <div class="map-container">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.3!2d105.52!3d20.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDQ2JzQ4LjAiTiAxMDXCsDMxJzEyLjAiRQ!5e0!3m2!1svi!2s!4v1234567890"
+                        width="100%"
+                        height="200"
+                        style="border:0; border-radius: 10px;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <ul style="margin-top: 15px;">
+                    <li><a href="#contact">Tư Vấn Thiết Kế</a></li>
+                    <li><a href="#contact">Đo Đạc Tại Nhà</a></li>
+                    <li><a href="#contact">Thi Công Lắp Đặt</a></li>
+                    <li><a href="#contact">Bảo Hành Sản Phẩm</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Công ty Cổ phần Công Nghệ Gỗ Xanh Việt Nam. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Animate sections on scroll
+    const sections = document.querySelectorAll('section');
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(30px)';
+        section.style.transition = 'all 0.8s ease-out';
+        observer.observe(section);
+    });
+
+    // Reason items staggered animation
+    const reasonItems = document.querySelectorAll('.reason-item');
+    const reasonObserver = new IntersectionObserver(function(entries) {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, index * 150);
+            }
+        });
+    }, observerOptions);
+
+    reasonItems.forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(30px)';
+        item.style.transition = 'all 0.6s ease-out';
+        reasonObserver.observe(item);
+    });
+});
+</script>
+</body>
+</html>
