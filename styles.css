@@ -1513,7 +1513,7 @@ body {
     .stat-label {
         font-size: 16px;
     }
-}
+
 
 @media (max-width: 480px) {
     .hotline-fixed {
@@ -1622,4 +1622,90 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+}
+/* =============================
+   CERTIFICATE SECTION
+============================= */
+.certificate-section {
+    padding: 80px 0;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.certificate-section h2 {
+    font-size: 28px;
+    color:#14532d;
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+
+.certificate-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.certificate-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 360px;
+    aspect-ratio: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificate-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* =============================
+   VIDEO INTRODUCTION SECTION
+============================= */
+.video-section {
+    padding: 80px 0;
+    background: #e9f4e8;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 35px;
+    color: #14532d;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.video-frame {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .certificate-card {
+        width: 80%;
+    }
+
+    .video-frame {
+        width: 95%;
+    }
 }
