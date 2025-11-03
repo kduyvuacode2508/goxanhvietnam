@@ -127,6 +127,48 @@
     </div>
   </section>
 
+    <!-- Award Section -->
+<section class="award-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Khoảnh Khắc Vinh Danh Gỗ Xanh Việt Nam</h2>
+        <p>Tự hào ghi dấu hành trình phát triển và cống hiến</p>
+      </div>
+  
+      <div class="award-content">
+        <!-- Bên trái: 3 ảnh -->
+        <div class="award-gallery">
+          <div class="award-item">
+            <img src="./anh/mau1.jpg" alt="Giải thưởng Gỗ Xanh Việt Nam 1">
+          </div>
+          <div class="award-item">
+            <img src="./anh/mau2.jpg" alt="Giải thưởng Gỗ Xanh Việt Nam 2">
+          </div>
+          <div class="award-item">
+            <img src="./anh/mau3.jpg" alt="Giải thưởng Gỗ Xanh Việt Nam 3">
+          </div>
+        </div>
+  
+        <!-- Bên phải: Lời khen -->
+        <div class="award-text">
+          <h3>Vinh Dự & Tự Hào</h3>
+          <p>
+            Công ty Cổ phần Công Nghệ <strong>Gỗ Xanh Việt Nam</strong> vinh dự được nhận giải thưởng
+            <em>Sao Vàng Doanh Nhân Việt Nam 2025</em> – minh chứng cho hành trình phát triển bền vững và không ngừng đổi mới.
+          </p>
+          <p>
+            Giải thưởng không chỉ là sự ghi nhận của cộng đồng doanh nghiệp Việt Nam, mà còn là động lực để Gỗ Xanh Việt Nam tiếp tục
+            mang đến các sản phẩm gỗ nhựa composite chất lượng, an toàn và thân thiện môi trường.
+          </p>
+          <blockquote class="award-quote">
+            “Thành công của chúng tôi đến từ niềm tin của khách hàng – đó là giải thưởng quý giá nhất.”
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
     <!-- Benefits Section -->
     <section class="benefits-section">
         <div class="container">
@@ -313,6 +355,8 @@
 
         </div>
     </section>
+ 
+  
   
     <section class="certificate-section">
         <div class="container">
@@ -327,6 +371,38 @@
           </div>
         </div>
       </section>
+      <!-- Video & Warehouse Section -->
+<!-- Video & Warehouse Section -->
+<section class="factory-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Video Kiểm Định Chất Lượng & Kho Xưởng Sản Xuất</h2>
+        <p>Minh chứng cho quy trình sản xuất nghiêm ngặt và chất lượng sản phẩm vượt trội</p>
+      </div>
+  
+      <div class="factory-content">
+        <!-- Video dọc bên trái -->
+        <div class="factory-video">
+          <video controls muted playsinline poster="./anh/mau4.jpg">
+            <source src="./anh/mau6.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+          </video>
+        </div>
+  
+        <!-- Ảnh kho xưởng bên phải -->
+        <div class="factory-gallery">
+          <div class="factory-item">
+            <img src="./anh/mau4.jpg" alt="Kho xưởng sản xuất Gỗ Xanh Việt Nam">
+          </div>
+          
+          <div class="factory-item">
+            <img src="./anh/mau5.jpg" alt="Nhân viên kiểm định sản phẩm Gỗ Xanh Việt Nam">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
       
 
     <!-- Contact Section -->
@@ -464,5 +540,19 @@
 
     <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        new Swiper(".award-swiper", {
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".award-swiper .swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+      
 </body>
 </html>

@@ -1712,3 +1712,208 @@ body {
         width: 95%;
     }
 }
+
+/* =============================
+   AWARD SECTION (HIỂN THỊ 3 ẢNH)
+============================= */
+.award-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  }
+  
+  .award-content {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  /* =============================
+   AWARD SECTION (HIỂN THỊ 3 ẢNH - CHUẨN MOBILE)
+============================= */
+.award-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .award-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .award-item img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;           /* ✅ Desktop: ảnh đầy khung, cân bố cục */
+    object-position: center top; /* ✅ Căn lên trên một chút để không cắt đầu người */
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    background-color: #fff;
+  }
+  
+  /* --- Responsive cho điện thoại --- */
+  @media (max-width: 768px) {
+    .award-item img {
+      width: 100%;
+      height: auto;              /* ✅ Cho phép co giãn tự nhiên */
+      object-fit: contain;       /* ✅ Giữ nguyên tỉ lệ, không cắt mặt */
+      object-position: center;   /* ✅ Căn giữa ảnh */
+    }
+  }
+  
+  .award-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(22, 101, 52, 0.2);
+  }
+  
+  .award-item:hover img {
+    transform: scale(1.02);
+  }
+  
+  /* --- Responsive cho điện thoại --- */
+  @media (max-width: 768px) {
+    .award-gallery {
+      grid-template-columns: 1fr;  /* ✅ Mỗi ảnh 1 hàng */
+      gap: 15px;
+    }
+  
+   
+  }
+  
+  
+  .award-text h3 {
+    font-size: 30px;
+    color: #14532d;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .award-text p {
+    font-size: 17px;
+    color: #374151;
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
+  
+  .award-quote {
+    font-style: italic;
+    color: #15803d;
+    font-weight: 600;
+    margin-top: 20px;
+    border-left: 4px solid #16a34a;
+    padding-left: 15px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .award-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  
+  
+  }
+  
+  
+
+/* =============================
+   FACTORY SECTION – VIDEO DỌC CHUẨN TỈ LỆ 9:16
+============================= */
+.factory-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  }
+  
+  .factory-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* ---- VIDEO DỌC THẬT SỰ ---- */
+  .factory-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .factory-video video {
+    aspect-ratio: 9 / 16; /* giữ đúng tỉ lệ dọc */
+    height: 700px;
+    width: auto;
+    border-radius: 20px;
+    object-fit: contain;
+    background: #000;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .factory-video video:hover {
+    transform: scale(1.03);
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.35);
+  }
+  
+  /* ---- ẢNH KHO XƯỞNG ---- */
+  .factory-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .factory-item img {
+    width: 400px;
+    
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .factory-item img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+  }
+  
+  /* ---- HEADER ---- */
+  .factory-section h2 {
+    color: #1e3a8a;
+    font-weight: 700;
+  }
+  
+  .factory-section p {
+    color: #334155;
+    font-size: 17px;
+    margin-top: 8px;
+  }
+  
+  /* ---- RESPONSIVE ---- */
+  @media (max-width: 1024px) {
+    .factory-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .factory-video video {
+      aspect-ratio: 9 / 16;
+      height: 500px;
+    }
+  
+    .factory-gallery {
+      flex-direction: row;
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .factory-gallery {
+      flex-direction: column;
+    }
+  
+    .factory-video video {
+      height: 420px;
+    }
+  }
+  
